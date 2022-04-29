@@ -1,0 +1,252 @@
+<html>
+
+<head>
+    <title>jQuery Homework</title>
+	    
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+
+<body>
+    <!-- Task #1 html-->
+    <div class="task1">        
+        <h1>Task #1 </h1>
+        <p id="taskInfo" >Task #1 - Scroll to the top of the page with jQuery. </p>
+		   
+        <h3>
+			"I suggest you try it again, Luke. This time, let go your conscious self and act on instinct."
+		</h3>
+        <h4>
+			"In my experience, there is no such thing as luck. I don't know what you're talking about. I am a member of the Imperial Senate on a diplomatic mission to Alderaan-- Don't underestimate the Force. I can't get involved! I've got work to do! It's not that I like the Empire, I hate it, but there's nothing I can do about it right now. It's such a long way from here."
+		</h4>
+
+        <div>
+            <h2>
+				Don't be too proud of this technological terror you've constructed. The ability to destroy a planet is insignificant next to the power of the Force.
+			</h2>
+            <p>
+				You're all clear, kid. Let's blow this thing and go home! What!? She must have hidden the plans in the escape pod. Send a detachment down to retrieve them, and see to it personally, Commander. There'll be no one to stop us this time!
+				<br><br>
+				Don't underestimate the Force. The plans you refer to will soon be back in our hands. The plans you refer to will soon be back in our hands. The plans you refer to will soon be back in our hands. She must have hidden the plans in the escape pod. Send a detachment down to retrieve them, and see to it personally, Commander. There'll be no one to stop us this time!
+			</p>
+        </div>
+        <div>
+            <h2>
+				I want to come with you to Alderaan. There's nothing for me here now. I want to learn the ways of the Force and be a Jedi, like my father before me.
+			</h2>
+            <p>
+				I need your help, Luke. She needs your help. I'm getting too old for this sort of thing. Look, I ain't in this for your revolution, and I'm not in it for you, Princess. I expect to be well paid. I'm in it for the money.
+				<br><br>
+				I'm surprised you had the courage to take the responsibility yourself. You're all clear, kid. Let's blow this thing and go home! As you wish. Still, she's got a lot of spirit. I don't know, what do you think?
+				<br><br>
+				Hey, Luke! May the Force be with you. A tremor in the Force. The last time I felt it was in the presence of my old master. The plans you refer to will soon be back in our hands. Partially, but it also obeys your commands.
+				<br><br>
+				Kid, I've flown from one side of this galaxy to the other. I've seen a lot of strange stuff, but I've never seen anything to make me believe there's one all-powerful Force controlling everything. There's no mystical energy field that controls my destiny. It's all a lot of simple tricks and nonsense. Red Five standing by.
+			</p>
+        </div>
+		<br />
+    </div>
+    <hr />
+
+    <!-- Task #2 html-->
+    <div class="task2">
+        <h1>Task #2 </h1>
+        <p id="taskInfo2">Task #2 - Disable/enable the form submit button. Disable the submit button until the visitor has clicked a check box. </p>        
+         
+	</div>
+    <hr />
+     
+    <input id="check" name="check" type="checkbox" value="y"/>I have read terms and conditions<br>  
+    <input id="submitbtn" disabled="disabled" name="Submit" type="submit" value="Submit" />
+    
+	<p id="ability"></p>  
+	
+	<!-- Task #3 html-->
+    <div class="task3">
+        <h1>Task #3 </h1>
+        <p id="taskInfo3">Task #3 - Blink text using jQuery. </p>
+        <p id="blink">May the <span class="blink">Force</span> be with you.</p>
+    </div>
+    <hr/>
+
+    <!-- Task #4 html-->
+    <div class="task4">
+        <h1>Task #4 </h1>
+        <p id="taskInfo4">Task #4 - Create a Zebra Stripes table effect. </p>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Marks in SE3355</th>
+                </tr>
+                <tr>
+                    <td>Luke Skywalker</td>
+                    <td>85.00</td>
+                </tr>
+                <tr>
+                    <td>Princess Leia Organa</td>
+                    <td>92.00</td>
+                </tr>
+                <tr>
+                    <td>Han Solo</td>
+                    <td>79.00</td>
+                </tr>
+                <tr>
+                    <td>BDarth Vaderill</td>
+                    <td>82.00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <hr />
+
+    <!-- Task #5 html-->
+    <div class="task5">
+        <h1>Task #5 </h1>
+        <p id="taskInfo5">Task #5 - Find the class of the clicked element. </p>
+
+        <p>Click on the color and get the class name.</p>
+        <ul class="tabs">
+            <li class="liRed">Red</li>
+            <li class="liBlack">Black</li>
+            <li class="liBlue">Blue</li>
+        </ul>
+        <p id="display"> </p>
+    </div>
+    <hr />
+
+    <!-- Task #6 html-->
+    <div class="task6">
+        <h1>Task #6 </h1>
+        <p id="taskInfo6">Task #6 - Remove disabled attribute using jQuery. </p>
+        <input type="checkbox" class="disabledCheckbox" disabled="disabled">White
+        <input type="checkbox" class="disabledCheckbox" disabled="disabled">Black
+        <p>
+			<input id="removeDisabledButton" type="button" value="Click to enable check boxes" />
+			<span>
+		    <input id="setDisabledButton" type="button" value="Click to disable check boxes" />
+			</span>
+		</p>
+        <p id="display2"> </p>
+    </div>
+    <hr />
+
+    <!---------------- Tasks ---------------->
+	<a href="#" class="scrollToTop">Go to Top</a>
+	
+	<style>
+        .scrollToTop{
+           width:80px; 
+           height:20px;
+           padding:10px; 
+           text-align:center; 
+           background: #FF0000;
+           color: white;
+		   border-radius: 8px;
+           text-decoration: none;
+           position:fixed;
+           top:650px;
+           right:40px;
+           display:none; 
+        }
+    </style>
+	
+	<script>
+	$("body").css("padding", "10px 50px 10px 50px");
+	
+	$("#taskInfo").css("color", "red");
+    $("#taskInfo").css("text-decoration", "underline");
+	$("#taskInfo2").css("color", "red");
+    $("#taskInfo2").css("text-decoration", "underline");
+	$("#taskInfo3").css("color", "red");
+    $("#taskInfo3").css("text-decoration", "underline");
+	$("#taskInfo4").css("color", "red");
+    $("#taskInfo4").css("text-decoration", "underline");
+	$("#taskInfo5").css("color", "red");
+    $("#taskInfo5").css("text-decoration", "underline");	
+	$("#taskInfo6").css("color", "red");
+    $("#taskInfo6").css("text-decoration", "underline");	
+	
+	
+	$(".scroll").css("height", "10px");
+	
+	$(".table_style").css("width", "50px");
+	$("table").css("width", "30%");
+	$("table").css("border-collapse", "separate");
+	$("table tr td").css("width", "50%");
+	$("table tr td").css("border", "0.5px solid #808080");
+	$("table tr td").css("padding", "5px");
+	$("table tr th").css("border", "0.5px solid #808080");
+	$("table tr th").css("padding", "5px");
+	$("table tr:nth-child(even)").css("background-color", "#808080");
+	
+	
+	
+	//TASK 1
+	$(document).ready(function(){
+	
+        $(window).scroll(function(){
+           if ($(this).scrollTop() > 100) {
+               $('.scrollToTop').fadeIn();
+           } else {
+               $('.scrollToTop').fadeOut();
+            }
+        });
+
+        $('.scrollToTop').click(function(){
+            $('html, body').animate({scrollTop : 0},800);
+            return false;
+        });
+
+    });
+    
+	
+	//TASK 2
+	$('#check').click(function() {
+	    
+	    if ($('#submitbtn').is(':disabled')) {
+    	   $('#submitbtn').removeAttr('disabled');
+		   $("#ability").text("Form submit button enabled");
+		   $("#ability").css("color", "black");
+        } else {
+    	   $('#submitbtn').attr('disabled', 'disabled');
+		   $("#ability").text("Form submit button disabled");
+		   $("#ability").css("color", "red");
+        }
+    });
+	
+	//TASK 3
+	function blink_text() {
+       $('.blink').fadeOut(400);
+       $('.blink').fadeIn(400);
+    }
+    setInterval(blink_text, 800);
+	
+	// TASK 4
+	$(document).ready(function(){
+	   $("tr:odd").addClass("zebra");
+    });
+	
+	// TASK 5
+	$("li").click(function() {
+	    var className = this.className
+        $("#display").text("Class of the clicked element: " + className);
+    });
+	
+	// TASK 6
+	$(document).ready(function(){ 
+       $('#removeDisabledButton').click(function(){ 
+          $('.disabledCheckbox').prop("disabled", false);
+		  $("#display2").text("Checkbox disabled attributes removed! ");
+  
+       });
+	   $('#setDisabledButton').click(function(){ 
+          $('.disabledCheckbox').prop("disabled", true);
+          $("#display2").text("Checkbox disabled attributes set! ");
+       });
+    });
+	
+	</script>
+	
+</body>
+
+</html>

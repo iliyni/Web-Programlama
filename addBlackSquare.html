@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week12 </title>
+    <style>
+		.boxDivs {
+			height: 200px;
+			line-height: 200px;
+			vertical-align: middle;
+			text-align: center;
+			color: azure;
+
+		}
+
+		body {
+			background-color: gainsboro;
+		}
+	</style>    
+</head>
+<body>
+    <script>
+		////document.addEventListener('DOMContentLoaded', function(){
+		let button = document.createElement('button');
+		let btnText = document.createTextNode('Add Square');
+		let containerDiv = document.createElement('div');
+		button.appendChild(btnText);
+		document.body.appendChild(button);
+		document.body.appendChild(containerDiv);
+
+		let id = '0';
+		button.addEventListener('click', function(){
+			console.log('here');
+			let div = document.createElement('div');
+			containerDiv.appendChild(div);
+			div.style.backgroundColor = 'black';
+			div.style.width = '200px';
+			div.style.height = '200px';
+			div.style.cssFloat = 'left';
+			div.className = 'boxDivs';
+			div.setAttribute('id', id);
+			id++;
+
+			div.addEventListener('mouseover', function(){
+				console.log(this.id);
+				let divText = document.createTextNode(this.id);
+				div.appendChild(divText);  
+		  
+			})
+
+			div.addEventListener('mouseout', function(){
+				div.innerText = ''; 
+
+			});
+
+			div.addEventListener('click', function() {
+				let randomColor = getRandomColor();
+				div.style.backgroundColor = randomColor;
+			})
+
+			div.addEventListener('dblclick', remove);
+
+
+		});
+
+		let color = ['red', 'blue', 'green', 'yellow', 'purple', 'pink', 'white', 'black'];
+			
+		function getRandomColor() {
+			let randomColor = color[Math.floor(Math.random()*color.length)];
+			return randomColor;
+		}
+
+		function remove() 
+		{
+			if (this.id %2 === 0) {
+				if (this.nextSibling) {
+					this.nextSibling.remove();
+				} else {
+					alert('The next sibling does not exist');
+				}
+			} else {
+				if (this.previousSibling) {
+					this.previousSibling.remove();
+				} else {
+					alert('The next sibling does not exist');
+				}
+			  
+			}
+		}
+
+		//});
+	</script>
+</body>
+</html>
